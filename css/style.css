@@ -1,0 +1,451 @@
+/*-------------------------------- */
+/*--                            -- */
+/*--     1. Fonts               -- */
+/*--     2. Normalize           -- */
+/*--     3. Main                -- */
+/*--       3.1 Icons            -- */
+/*--       3.2 Buttons          -- */
+/*--       3.3 Forms            -- */
+/*--     4. Header              -- */
+/*--     5. Content             -- */
+/*--     6. Footer              -- */
+/*--     7. Media               -- */
+/*--                            -- */
+/*-------------------------------- */
+/* 1. FONTS */
+/* ================================================ */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.eot");
+  src: url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.svg#OpenSans") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-CondensedBold.eot");
+  src: url("../fonts/OpenSans-CondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondensedBold.woff2") format("woff2"), url("../fonts/OpenSans-CondensedBold.woff") format("woff"), url("../fonts/OpenSans-CondensedBold.ttf") format("truetype"), url("../fonts/OpenSans-CondensedBold.svg#OpenSans-CondensedBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 2. NORMALIZE */
+/* ================================================ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  border-style: none;
+  vertical-align: top;
+}
+
+input, textarea, select {
+  padding: 0;
+  margin: 0;
+  font: 14px/1 "OpenSans", sans-serif;
+  vertical-align: middle;
+  color: #000;
+  outline: none;
+  border-style: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label[for], input[type=checkbox], input[type=radio],
+input[type=submit], button, select {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+mark {
+  background: none;
+}
+
+a {
+  color: #363636;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d0215c;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clr {
+  *zoom: 1;
+}
+.clr:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* main rules */
+body {
+  min-width: 320px;
+  font: 14px/1 "OpenSans", sans-serif;
+  font-weight: 300;
+  background-color: #F7F7F8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: #363636;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 3. MAIN STYLES */
+/* ================================================ */
+.wrapper {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 3.1. Icons
+ * ====================== */
+.ic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 3.2. Buttons
+ * ====================== */
+.button, a.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #191970;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.button:hover, a.button:hover {
+  background-color: #d0215c;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 3.3. forms
+ * ====================== */
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+input[type='search'],
+input[type='url'],
+input[type='password'],
+textarea,
+select {
+  height: 30px;
+  padding: 0 10px;
+  color: #444;
+  font: normal 14px/18px "OpenSans", sans-serif;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+input[type='text'].form-control,
+input[type='number'].form-control,
+input[type='email'].form-control,
+input[type='tel'].form-control,
+input[type='search'].form-control,
+input[type='url'].form-control,
+input[type='password'].form-control,
+textarea.form-control,
+select.form-control {
+  display: block;
+  width: 100%;
+}
+input[type='text']:-ms-input-placeholder,
+input[type='number']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder,
+input[type='tel']:-ms-input-placeholder,
+input[type='search']:-ms-input-placeholder,
+input[type='url']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #aaa;
+}
+input[type='text']:-moz-placeholder,
+input[type='number']:-moz-placeholder,
+input[type='email']:-moz-placeholder,
+input[type='tel']:-moz-placeholder,
+input[type='search']:-moz-placeholder,
+input[type='url']:-moz-placeholder,
+input[type='password']:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder {
+  color: #aaa;
+}
+input[type='text']::-moz-placeholder,
+input[type='number']::-moz-placeholder,
+input[type='email']::-moz-placeholder,
+input[type='tel']::-moz-placeholder,
+input[type='search']::-moz-placeholder,
+input[type='url']::-moz-placeholder,
+input[type='password']::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+  color: #aaa;
+}
+input[type='text']::-webkit-input-placeholder,
+input[type='number']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder,
+input[type='tel']::-webkit-input-placeholder,
+input[type='search']::-webkit-input-placeholder,
+input[type='url']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #aaa;
+}
+input[type='text']::placeholder,
+input[type='number']::placeholder,
+input[type='email']::placeholder,
+input[type='tel']::placeholder,
+input[type='search']::placeholder,
+input[type='url']::placeholder,
+input[type='password']::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #aaa;
+}
+
+textarea {
+  height: auto;
+  min-height: 100px;
+  padding-top: 10px;
+  resize: none;
+  font-family: Arial;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* 4. HEADER */
+/* ================================================ */
+#header {
+  padding: 20px 0;
+  background-color: #003d6c;
+  box-shadow: 1px 8px 5px -7px #000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* 5. CONTENT */
+/* ================================================ */
+.active {
+  color: #d0215c !important;
+}
+
+.sidebar {
+  float: left;
+  height: 100%;
+  width: 200px;
+  margin-right: 20px;
+  background-color: #d3d3d3;
+  box-shadow: 3px 3px 5px 0px #000;
+}
+.sidebar ul {
+  padding-top: 20px;
+}
+.sidebar li {
+  padding: 10px 10px 10px 0;
+}
+.sidebar a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #003d6c;
+}
+.sidebar a:hover {
+  color: #d0215c;
+}
+
+.cnt {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.course, .news {
+  padding: 10px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+.course form, .news form {
+  display: inline-block;
+  margin-right: 20px;
+}
+.course form label, .news form label {
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-right: -4px;
+  font-size: 20px;
+}
+.course form span, .news form span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #d0215c;
+}
+.course form input, .news form input {
+  margin-left: 20px;
+  width: 70px;
+}
+
+.news-cnt {
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+}
+.news-cnt .add-news {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #c0c0c0;
+}
+.news-cnt .add-news .fa-plus {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.news-cnt ul {
+  padding: 10px 10px 10px 0;
+}
+.news-cnt ul li {
+  margin-bottom: 10px;
+}
+.news-cnt ul li:last-child {
+  margin-bottom: 0;
+}
+.news-cnt ul span {
+  margin-right: 20px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 400;
+}
+.news-cnt ul .news-title {
+  font-weight: 600;
+}
+
+/* 6. FOOTER */
+/* ================================================ */
+footer {
+  text-align: left;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+  min-width: 320px;
+}
+
+/* 7. MEDIA */
+/* ================================================ */
