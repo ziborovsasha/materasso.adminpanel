@@ -118,7 +118,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h4 {
@@ -196,7 +196,7 @@ html, body {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding: 5px 10px;
+  padding: 3px 7px;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -356,39 +356,80 @@ label {
   font-weight: 600;
   color: #fff;
 }
+.logo:hover {
+  color: #fff;
+}
 
 /* 5. CONTENT */
 /* ================================================ */
-.active {
-  color: #d0215c !important;
+.accordion {
+  float: left;
+  width: 200px;
+  max-width: 300px;
+  background: #d3d3d3;
+  -webkit-box-shadow: 3px 3px 5px 0px #000;
+  -moz-box-shadow: 3px 3px 5px 0px #000;
+  box-shadow: 3px 3px 5px 0px #000;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+.accordion .link {
+  display: block;
+  position: relative;
+  padding: 15px 15px 15px 42px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #363636;
+  cursor: pointer;
+  border-bottom: 1px solid #a9a9a9;
+  transition: all 0.4s ease;
+}
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+.accordion i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #363636;
+  transition: all 0.4s ease;
+}
+.accordion i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+.accordion .open .link {
+  color: #808080;
+}
+.accordion .open i {
+  color: #808080;
+}
+.accordion .open i.fa-chevron-down {
+  transform: rotate(180deg);
 }
 
-.sidebar {
-  float: left;
-  height: 100%;
-  width: 200px;
-  margin-right: 20px;
-  background-color: #d3d3d3;
-  box-shadow: 3px 3px 5px 0px #000;
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 16px;
 }
-.sidebar ul {
-  padding-top: 20px;
+.submenu li {
+  border-bottom: 1px solid #808080;
 }
-.sidebar li {
-  padding: 10px 10px 10px 20px;
-  border-bottom: 1px solid #363636;
+.submenu li a {
+  display: block;
+  padding: 12px;
+  padding-left: 42px;
+  text-decoration: none;
+  color: #d9d9d9;
+  transition: all 0.25s ease;
 }
-.sidebar a {
-  font-size: 24px;
-  font-weight: 700;
-  color: #363636;
-}
-.sidebar a .fa {
-  margin-right: 10px;
-  font-size: 20px;
-}
-.sidebar a:hover {
-  color: #d0215c;
+.submenu li:hover {
+  background: #000080;
+  color: #FFF;
 }
 
 .cnt {
@@ -396,7 +437,7 @@ label {
   padding: 20px;
 }
 
-.course, .news {
+section {
   padding: 10px;
   margin-bottom: 30px;
   -webkit-border-radius: 10px;
@@ -406,17 +447,21 @@ label {
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
-.course form, .news form {
+section i {
+  margin-right: 20px;
+}
+
+.course form {
   display: inline-block;
   margin-right: 20px;
 }
-.course form label, .news form label {
+.course form label {
   display: inline-block !important;
   vertical-align: middle;
   margin-right: -4px;
   font-size: 20px;
 }
-.course form span, .news form span {
+.course form span {
   display: inline-block;
   vertical-align: middle;
   margin-right: -4px;
@@ -426,46 +471,47 @@ label {
   font-weight: 600;
   color: #d0215c;
 }
-.course form input, .news form input {
+.course form input {
   margin-left: 20px;
   width: 70px;
 }
 
-.news .fa {
-  margin-right: 20px;
-}
-.news-cnt {
+.section-wrap {
   padding: 10px;
+  margin-bottom: 10px;
   background-color: #fff;
   border: 1px solid #c0c0c0;
 }
-.news-cnt .add-news {
+.section-wrap .add-category {
   display: block;
   padding-bottom: 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid #c0c0c0;
 }
-.news-cnt .add-news .fa-plus {
+.section-wrap .add-category .fa-plus {
   margin-right: 10px;
   font-size: 14px;
 }
-.news-cnt ul {
+.section-wrap ul {
   padding: 10px 10px 10px 0;
 }
-.news-cnt ul li {
+.section-wrap ul li {
   margin-bottom: 10px;
 }
-.news-cnt ul li:last-child {
+.section-wrap ul li:last-child {
   margin-bottom: 0;
 }
-.news-cnt ul span {
-  margin-right: 20px;
+.section-wrap ul li .inner-one, .section-wrap ul li .inner-two {
+  display: inline-block;
+  width: 15%;
+  margin-right: 10px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
-.news-cnt ul .news-title {
+.section-wrap ul li .inner-two {
+  width: 50%;
   font-weight: 600;
 }
 
