@@ -106,7 +106,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -118,7 +118,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h4 {
@@ -496,7 +496,7 @@ section .add-category:hover {
 }
 
 .section-wrap {
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   margin-bottom: 10px;
   margin-top: 10px;
   background-color: #fff;
@@ -518,9 +518,6 @@ section .add-category:hover {
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
-}
-.section-wrap ul li .inner-two {
-  font-weight: 600;
 }
 
 /* 6. FOOTER */
