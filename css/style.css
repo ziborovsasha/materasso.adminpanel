@@ -114,11 +114,11 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 h4 {
@@ -495,7 +495,7 @@ section .add-category:hover {
   border: 1px solid #c0c0c0;
 }
 .section-wrap h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 .section-wrap ul {
   padding: 10px 10px 10px 0;
@@ -510,9 +510,8 @@ section .add-category:hover {
   display: inline-block;
   margin-right: 30px;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  font-style: italic;
 }
 
 .table-store_mattress, .table-store_pillows {
