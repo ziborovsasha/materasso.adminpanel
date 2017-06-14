@@ -17,7 +17,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
-	<link media="all" rel="stylesheet" href="css/select2.css">
+	<link media="all" rel="stylesheet" href="css/select2.min.css">
+	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -66,80 +67,76 @@
 			</ul>
 		</aside>
 		<div class="cnt">			
-			<section>
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню склада</h2>
-				<div class="section-wrap">
-					<h3>Категория товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>	
-					<ul>
-						<li>							
-							<span class="inner-two">Матрасы</span>
+			<section class="category-product">
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню склада</h2>		
+				<form action="">
+					<fieldset>
+						<label class="product-label">Редактор категорий:</label>
+						<select class="product-select" style="width: 20%">
+							<option>Пожалуйста, выберите категорию:</option>
+								<option>Матрасы</option>
+								<option>Подушки</option>
+								<option>Каркасы</option>
+						</select>
+						<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+					</fieldset>
+					<fieldset>
+						<label class="product-label">Редактор моделей:</label>
+						<select class="product-select" style="width: 20%">
+							<option>Пожалуйста, выберите модель:</option>
+								<option>Ergo 3D</option>
+								<option>Fizio 3D</option>
+								<option>Termopur 3D</option>
+						</select>
+						<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+					</fieldset>
+					<fieldset>
+						<label class="product-label">Редактор размеров:</label>
+						<select class="product-select" style="width: 20%">
+							<option>Пожалуйста, выберите размер:</option>
+								<option>80/190</option>
+								<option>90/190</option>
+								<option>100/190</option>
+						</select>
+						<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+					</fieldset>
+				</form>								
+			</section>
+			<section style="overflow: hidden;">
+				<h2><i class="fa fa-download" aria-hidden="true"></i>Товар</h2>
+				<table class="table-store_mattress product" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Размер</th>
+							<th>Цена</th>
+							<th>Наличие</th>
+							<th>Бронь</th>
+							<th>Оформление</th>
+							<th>Заказан</th>
+							<th>Редактировать</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Ergo 3D</th>
+						<th>80/190</th>
+						<td>500 &euro;</td>
+						<td>5</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>
 							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-							<div class="section-wrap">
-								<h3>Модель товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>
-								<ul>
-									<li>							
-										<span class="inner-two">Ergo 3D</span>
-										<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-										<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-										<div class="section-wrap">
-											<h3>Название товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>
-											<ul>
-												<li>							
-													<span class="inner-two">Ergo 3D 160/200</span>
-													<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-													<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>							
-												</li>
-												<li>							
-													<span class="inner-two">Ergo 3D 180/200</span>
-													<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-													<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>							
-												</li>
-												<li>							
-													<span class="inner-two">Ergo 3D 200/200</span>
-													<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-													<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>							
-												</li>
-											</ul>
-										</div>							
-									</li>
-									<li>							
-										<span class="inner-two">Fizio 3D</span>
-										<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-										<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-										<div class="section-wrap">
-											<h3>Название товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>								
-										</div>							
-									</li>
-									<li>							
-										<span class="inner-two">Termopur 3D</span>
-										<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-										<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-										<div class="section-wrap">
-											<h3>Название товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>								
-										</div>							
-									</li>
-								</ul>
-							</div>			
-						</li>
-						<li>							
-							<span class="inner-two">Подушки</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-							<div class="section-wrap">
-								<h3>Модель товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>								
-							</div>							
-						</li>
-						<li>							
-							<span class="inner-two">Каркасы</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-							<div class="section-wrap">
-								<h3>Модель товара<a href="#" class="add-category"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a></h3>								
-							</div>							
-						</li>
-					</ul>
-				</div>				
+							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+						</td>
+					</tr>					
+				</table>				
 			</section>	
 		</div>
 				
@@ -147,6 +144,8 @@
 
 
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
 </body>
 </html>

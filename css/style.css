@@ -98,7 +98,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #d0215c;
   text-decoration: none;
 }
@@ -336,7 +336,7 @@ textarea {
 label {
   display: block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* 4. HEADER */
@@ -447,19 +447,7 @@ section i {
   margin-right: 20px;
 }
 section .add-category {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 30px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #0000CD;
-}
-section .add-category .fa-plus {
-  margin-right: 3px;
-  font-size: 14px;
-}
-section .add-category:hover {
-  color: #f00;
+  margin-left: 20px;
 }
 
 .course form {
@@ -544,6 +532,40 @@ section .add-category:hover {
 .table-store_mattress {
   float: left;
   margin-right: 20px;
+}
+
+.category-product h2 {
+  margin-bottom: 30px;
+}
+.category-product .select2 {
+  width: 260px !important;
+}
+.category-product fieldset {
+  margin-bottom: 20px;
+}
+.category-product label {
+  margin-bottom: 15px;
+}
+
+.product {
+  width: 100%;
+}
+
+#modal-news .popup-modal-dismiss {
+  display: block;
+  font-size: 26px;
+  text-align: right;
+}
+#modal-news .edit-news {
+  padding: 20px 0;
+  border-top: 1px solid #c0c0c0;
+}
+#modal-news input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#modal-news textarea {
+  width: 100%;
 }
 
 /* 6. FOOTER */
