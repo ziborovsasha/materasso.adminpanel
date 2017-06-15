@@ -65,70 +65,59 @@
 			</ul>
 		</aside>
 		<div class="cnt">			
-			<section class="category-product">
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню склада</h2>		
+			<section class="category-partner">
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню партнеров</h2>	
 				<form action="">
 					<fieldset>
-						<label class="product-label">Редактор категорий:</label>
+						<label class="product-label">Редактировать/добавить партнера:</label>
 						<select class="select">
-							<option>Пожалуйста, выберите категорию:</option>
-								<option>Матрасы</option>
-								<option>Подушки</option>
-								<option>Каркасы</option>
+							<option>Пожалуйста, выберите партнера:</option>
+								<option>ФОП Коваленко</option>
+								<option>ФОП Коваленко</option>
+								<option>ФОП Коваленко</option>
 						</select>						
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#modal-partner" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
 						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-					</fieldset>
-					<fieldset>
-						<label class="product-label">Редактор моделей:</label>
-						<select class="select">
-							<option>Пожалуйста, выберите модель:</option>
-								<option>Ergo 3D</option>
-								<option>Fizio 3D</option>
-								<option>Termopur 3D</option>
-						</select>
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-					</fieldset>
-					<fieldset>
-						<label class="product-label">Редактор размеров:</label>
-						<select class="select">
-							<option>Пожалуйста, выберите размер:</option>
-								<option>80/190</option>
-								<option>90/190</option>
-								<option>100/190</option>
-						</select>
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-					</fieldset>
+					</fieldset>			
 				</form>								
 			</section>
-			<section style="overflow: hidden;">
-				<h2><i class="fa fa-download" aria-hidden="true"></i>Товар</h2>
+			<section class="section-partner" style="overflow: hidden;">
+				<h2><i class="fa fa-download" aria-hidden="true"></i>Партнер</h2>
 				<table class="table-store product" cellspacing="0">
 					<thead>
 						<tr>
-							<th>Матрасы</th>
-							<th>Размер</th>
-							<th>Цена</th>
-							<th>Наличие</th>
-							<th>Бронь</th>
-							<th>Оформление</th>
-							<th>Заказан</th>
-							<th>Редактировать</th>
+							<th>Название</th>
+							<th>Скидка</th>
+							<th>Баланс</th>
+							<th>Тип</th>
+							<th>Адрес юрид.</th>
+							<th>Адрес факт.</th>
+							<th>Код ЕДРПОУ</th>
+							<th>ФИО директора</th>
+							<th>E-mail директора</th>
+							<th>E-mail для связи</th>
+							<th>Телефон директора</th>
+							<th>Телефон для связи</th>
+							<th>Сайт компании</th>
+							<th>Выписка о Гос. Регистрации</th>
+							<th>Ред.</th>
 						</tr>
 					</thead>
 					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
+						<th>ФОП Коваленко</th>
+						<td>30%</td>
 						<td>500 &euro;</td>
-						<th>5</th>
-						<th>1</th>
-						<th>2</th>
-						<th>1</th>
+						<td>Юр. лицо</td>
+						<td>г.Киев, ул.Киквидзе-36, оф.400</td>
+						<td>г.Киев, пр.Лесной-25, оф.305</td>
+						<td>2651641694</td>
+						<td>Коваленко Геннадий Серегеевич</td>
+						<td>kovalenko_gennadiy@gmail.com</td>
+						<td>kovalenko_gennadiy@gmail.com</td>
+						<td>+380(66)4444444</td>
+						<td>+380(66)4444444</td>
+						<td>materasso.net.ua</td>
+						<td>+</td>
 						<td>
 							<a href="#modal-product" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						</td>
@@ -141,43 +130,70 @@
 
 	<!-- ===== Модальное окно ===== -->
 
-	<div id="modal-category" class="modal-category mfp-hide">
+	<div id="modal-partner" class="modal-partner mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 		<h3>Редактирование/добавление</h3>
 		<div class="edit-item">			
 			<fieldset>
-				<label>Новая(ый)</label>
-				<textarea></textarea>
+				<label>Название</label>
+				<input type="text" name="name">
 			</fieldset>
-			<a href="#" class="button">Сохранить</a>
-		</div>		
-	</div>
-
-	<div id="modal-product" class="modal-product mfp-hide">
-		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<h3>Редактирование товара</h3>
-		<div class="edit-item">
-			<table class="table-store product" cellspacing="0">
-					<thead>
-						<tr>
-							<th>Модель</th>
-							<th>Размер</th>
-							<th>Цена</th>
-							<th>Наличие</th>
-							<th>Ширина</th>
-							<th>Длина</th>
-							<th>Высота</th>							
-						</tr>
-					</thead>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>500 &euro;<input type="text" name="text"></td>
-						<th>5<input type="text" name="text"></th>
-						<th>80<input type="text" name="text"></th>
-						<th>190<input type="text" name="text"></th>
-						<th>15<input type="text" name="text"></th>						
-				</table>
+			<fieldset>
+				<label>Скидка %</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Баланс</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Тип клиента</label>
+				<select class="select">
+					<option>Пожалуйста, выберите тип:</option>
+					<option>Юредическое лицо</option>
+					<option>Физическое лицо</option>					
+				</select>
+			</fieldset>
+			<fieldset>
+				<label>Адрес юридический</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Адрес фактический</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Код ЕДРПОУ</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>ФИО директора</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>E-mail директора</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>E-mail для связи</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Телефон директора</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Телефон для связи</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Сайт компании</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Прикрепить копию документа (Выписка о Гос. Регистрации)</label>
+				<input type="text" name="name">
+			</fieldset>
 			<a href="#" class="button">Сохранить</a>
 		</div>		
 	</div>
