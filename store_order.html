@@ -45,6 +45,7 @@
 					<ul class="submenu">
 						<li><a href="store_summary-table.html">Сводная таблица</a></li>
 						<li><a href="store_control.html">Меню склада</a></li>
+						<li><a href="store_order.html">Меню заказов</a></li>
 					</ul>
 				</li>
 				<li>
@@ -66,40 +67,81 @@
 		</aside>
 		<div class="cnt">			
 			<section class="category-partner">
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню партнеров</h2>	
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню заказов</h2>	
 				<form action="">
 					<fieldset>
-						<label class="product-label">Редактировать/добавить партнера:</label>
+						<label class="product-label">Выберете партнера:</label>
 						<select class="select">
 							<option>Пожалуйста, выберите партнера:</option>
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
 						</select>						
-						<a href="#modal-partner" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-					</fieldset>			
+					</fieldset>
+					<fieldset>
+						<label class="product-label">Выберете категорию товара:</label>
+						<select class="select">
+							<option>Пожалуйста, выберите категорию:</option>
+							<option>Матрасы</option>
+							<option>Подушки</option>
+							<option>Каркасы</option>
+						</select>						
+					</fieldset>
+					<fieldset>
+						<label class="product-label">Выберете модель товара:</label>
+						<select class="select">
+							<option>Пожалуйста, выберите модель:</option>
+							<option>Ergo 3D</option>
+							<option>Fizio 3D</option>
+							<option>Termopur 3D</option>
+						</select>						
+					</fieldset>
+					<fieldset>
+						<label class="product-label">Выберете размер товара:</label>
+						<select class="select">
+							<option>Пожалуйста, выберите размер:</option>
+							<option>80/190</option>
+							<option>90/190</option>
+							<option>100/190</option>
+						</select>						
+					</fieldset>
+					<fieldset class="fieldset-group">
+						<label class="product-label">Зарезервировать</label>						
+						<input type="text" name="reserve" size="6"> шт.				
+					</fieldset>
+					<fieldset class="fieldset-group">
+						<label class="product-label">Оформить</label>						
+						<input type="text" name="reserve" size="6"> шт.				
+					</fieldset>				
 				</form>								
 			</section>
 			<section class="section-partner" style="overflow: hidden;">
-				<h2><i class="fa fa-download" aria-hidden="true"></i>Партнер</h2>
+				<h2><i class="fa fa-download" aria-hidden="true"></i>Заказ</h2>
 				<table class="table-store product" cellspacing="0">
 					<thead>
 						<tr>
 							<th>Название</th>
 							<th>Контактное лицо</th>
 							<th>Телефон для связи</th>
-							<th>Скидка</th>
-							<th>Баланс</th>							
-							<th>Редактировать</th>
+							<th>Модель</th>
+							<th>Размер</th>
+							<th>Скидка</th>							
+							<th>Баланс</th>
+							<th>Резерв</th>
+							<th>Оформлено</th>							
+							<th>Редак.</th>
 						</tr>
 					</thead>
 					<tr>
 						<th>ФОП Коваленко</th>
 						<td>Коваленко Геннадий Серегеевич</td>
 						<td>+380(66)4444444</td>
+						<td>Ergo 3D</td>
+						<td>80/190</td>
 						<td>30%</td>
-						<td>500 &euro;</td>												
+						<td>500 &euro;</td>
+						<td>5</td>
+						<td>7</td>											
 						<td>
 							<a href="#modal-partner-edit" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						</td>

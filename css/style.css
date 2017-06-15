@@ -513,7 +513,7 @@ section .add-category {
   box-shadow: 1px 1px 2px #d1d1d1;
 }
 .table-store th, .table-store td {
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-top: 1px solid #fafafa;
   border-bottom: 1px solid #e0e0e0;
   background: #ededed;
@@ -545,16 +545,11 @@ section .add-category {
   margin-bottom: 15px;
 }
 
-.section-partner th, .section-partner td {
-  padding: 5px;
-  font-size: 10px;
-}
-
-.product {
+table {
   width: 100%;
 }
 
-.modal-news, .modal-category, .modal-product, .modal-del, .modal-partner {
+.modal-news, .modal-category, .modal-product, .modal-del, .modal-partner, .modal-partner-edit {
   position: relative;
   background: #FFF;
   padding: 20px;
@@ -565,7 +560,7 @@ section .add-category {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-.modal-news .button, .modal-category .button, .modal-product .button, .modal-del .button, .modal-partner .button {
+.modal-news .button, .modal-category .button, .modal-product .button, .modal-del .button, .modal-partner .button, .modal-partner-edit .button {
   display: block;
   margin: 0 auto;
   width: 100px;
@@ -580,7 +575,7 @@ section .add-category {
 }
 
 .modal-partner {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 #modal-product input {
@@ -592,41 +587,60 @@ section .add-category {
   margin-left: 10px;
 }
 
-#modal-news .popup-modal-dismiss, #modal-category .popup-modal-dismiss, #modal-product .popup-modal-dismiss, #modal-del .popup-modal-dismiss, #modal-partner .popup-modal-dismiss {
+#modal-news .popup-modal-dismiss, #modal-category .popup-modal-dismiss, #modal-product .popup-modal-dismiss, #modal-del .popup-modal-dismiss, #modal-partner .popup-modal-dismiss, #modal-partner-edit .popup-modal-dismiss {
   display: block;
   font-size: 26px;
   text-align: right;
 }
-#modal-news .edit-item, #modal-category .edit-item, #modal-product .edit-item, #modal-del .edit-item, #modal-partner .edit-item {
+#modal-news .edit-item, #modal-category .edit-item, #modal-product .edit-item, #modal-del .edit-item, #modal-partner .edit-item, #modal-partner-edit .edit-item {
   padding: 20px 0 0;
   border-top: 1px solid #c0c0c0;
 }
-#modal-news label, #modal-news fieldset, #modal-category label, #modal-category fieldset, #modal-product label, #modal-product fieldset, #modal-del label, #modal-del fieldset, #modal-partner label, #modal-partner fieldset {
+#modal-news label, #modal-news fieldset, #modal-category label, #modal-category fieldset, #modal-product label, #modal-product fieldset, #modal-del label, #modal-del fieldset, #modal-partner label, #modal-partner fieldset, #modal-partner-edit label, #modal-partner-edit fieldset {
   margin-bottom: 20px;
 }
-#modal-news input, #modal-category input, #modal-product input, #modal-del input, #modal-partner input {
+#modal-news input, #modal-category input, #modal-product input, #modal-del input, #modal-partner input, #modal-partner-edit input {
   width: 100%;
   margin-bottom: 20px;
 }
-#modal-news textarea, #modal-category textarea, #modal-product textarea, #modal-del textarea, #modal-partner textarea {
+#modal-news textarea, #modal-category textarea, #modal-product textarea, #modal-del textarea, #modal-partner textarea, #modal-partner-edit textarea {
   width: 100%;
 }
-#modal-news p, #modal-category p, #modal-product p, #modal-del p, #modal-partner p {
+#modal-news p, #modal-category p, #modal-product p, #modal-del p, #modal-partner p, #modal-partner-edit p {
   margin: 20px 0 30px 0;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 
-#modal-partner fieldset {
+#modal-partner fieldset, #modal-partner-edit fieldset {
+  margin-bottom: 10px;
+}
+#modal-partner label, #modal-partner-edit label {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-size: 14px;
+}
+#modal-partner input, #modal-partner-edit input {
+  width: 400px;
+  height: 25px;
   margin-bottom: 0;
 }
-#modal-partner label {
-  display: inline-block;
-  width: 30%;
+#modal-partner input[name="discount"], #modal-partner input[name="balance"], #modal-partner-edit input[name="discount"], #modal-partner-edit input[name="balance"] {
+  width: 70px;
+  margin-left: 20px;
 }
-#modal-partner input {
-  width: 500px;
+#modal-partner p, #modal-partner-edit p {
+  display: inline-block;
+  width: 50px;
+  margin: 0;
+}
+
+.fieldset-group {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 /* 6. FOOTER */
