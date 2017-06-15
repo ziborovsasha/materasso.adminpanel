@@ -502,7 +502,8 @@ section .add-category {
   font-weight: 600;
 }
 
-.table-store_mattress, .table-store_pillows {
+.table-store {
+  margin-bottom: 20px;
   text-shadow: 1px 1px 0px #fff;
   background: #eaebec;
   border: 1px solid #ccc;
@@ -511,10 +512,10 @@ section .add-category {
   -moz-box-shadow: 1px 1px 2px #d1d1d1;
   box-shadow: 1px 1px 2px #d1d1d1;
 }
-.table-store_mattress thead th, .table-store_pillows thead th {
+.table-store thead th {
   font-size: 14px;
 }
-.table-store_mattress th, .table-store_mattress td, .table-store_pillows th, .table-store_pillows td {
+.table-store th, .table-store td {
   padding: 5px 15px;
   border-top: 1px solid #fafafa;
   border-bottom: 1px solid #e0e0e0;
@@ -524,12 +525,12 @@ section .add-category {
   text-align: center;
   font-weight: 300;
 }
-.table-store_mattress th, .table-store_pillows th {
+.table-store th {
   font-size: 16px;
   font-weight: 600;
 }
 
-.table-store_mattress {
+.mattress {
   float: left;
   margin-right: 20px;
 }
@@ -551,20 +552,53 @@ section .add-category {
   width: 100%;
 }
 
-#modal-news .popup-modal-dismiss {
+.modal-news, .modal-category, .modal-product {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 1000px;
+  margin: 20px auto;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.modal-news .button, .modal-category .button, .modal-product .button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.modal-category {
+  max-width: 500px;
+}
+
+#modal-product input {
+  vertical-align: middle;
+  display: inline-block;
+  width: 62px !important;
+  height: 28px;
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+#modal-news .popup-modal-dismiss, #modal-category .popup-modal-dismiss, #modal-product .popup-modal-dismiss {
   display: block;
   font-size: 26px;
   text-align: right;
 }
-#modal-news .edit-news {
-  padding: 20px 0;
+#modal-news .edit-item, #modal-category .edit-item, #modal-product .edit-item {
+  padding: 20px 0 0;
   border-top: 1px solid #c0c0c0;
 }
-#modal-news input {
+#modal-news label, #modal-news fieldset, #modal-category label, #modal-category fieldset, #modal-product label, #modal-product fieldset {
+  margin-bottom: 20px;
+}
+#modal-news input, #modal-category input, #modal-product input {
   width: 100%;
   margin-bottom: 20px;
 }
-#modal-news textarea {
+#modal-news textarea, #modal-category textarea, #modal-product textarea {
   width: 100%;
 }
 

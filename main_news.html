@@ -105,15 +105,20 @@
 
 	<!-- ===== Модальное окно ===== -->
 
-	<div id="modal-news" class="white-popup mfp-hide">
+	<div id="modal-news" class="modal-news mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 		<h3>Редактирование/добавление новости</h3>
-		<div class="edit-news">
-			<h4>Заголовок новости</h4>
-			<input type="text" name="text">
-			<h4>Текст новости</h4>
-			<textarea></textarea>
-		</div>		
+		<div class="edit-item">
+			<fieldset>
+				<label for="title-new">Заголовок новости</label>
+				<input id="title-new" type="text" name="text">
+			</fieldset>
+			<fieldset>
+				<label for="text-new">Текст новости</label>
+				<textarea id="text-new"></textarea>
+
+		</div>
+		<a href="#" class="button">Сохранить</a>
 	</div>
 
 
