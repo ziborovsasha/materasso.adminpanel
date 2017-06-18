@@ -96,11 +96,13 @@ mark {
 a {
   color: #363636;
   text-decoration: none;
+  outline: none;
 }
 
 a:hover, a:focus {
   color: #d0215c;
   text-decoration: none;
+  outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -182,6 +184,10 @@ html, body {
   position: relative;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 /* 3.1. Icons
  * ====================== */
 .ic {
@@ -209,6 +215,7 @@ html, body {
   box-shadow: inset 0 0 0 1px #e3e3e3;
   color: #555;
   text-shadow: 0 1px 0 #d6d6d6;
+  outline: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -225,6 +232,7 @@ html, body {
   border: solid 1px #a2a2a2;
   border-bottom: solid 3px #878787;
   box-shadow: inset 0 0 0 1px #d4d4d4;
+  outline: none;
 }
 .button:active, a.button:active {
   background: #afafaf;
@@ -233,10 +241,14 @@ html, body {
   background: linear-gradient(#afafaf, #a9a9a9);
   border: solid 1px #757575;
   box-shadow: inset 0 10px 15px 0 #9a9a9a;
+  outline: none;
 }
 .button i, a.button i {
   margin: 0 auto;
   font-size: 16px;
+}
+.button.lg, a.button.lg {
+  padding: 3px 10px;
 }
 
 /* 3.3. forms
@@ -446,8 +458,16 @@ section {
 section i {
   margin-right: 20px;
 }
-section .add-category {
+section .m-left {
   margin-left: 20px;
+}
+section .title-init {
+  display: inline-block;
+  margin-right: 20px;
+}
+section .quantity {
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .course form {
@@ -468,11 +488,22 @@ section .add-category {
   margin-left: 20px;
   font-size: 30px;
   font-weight: 600;
-  color: #d0215c;
+  text-decoration: underline;
 }
 .course form input {
   margin-left: 20px;
   width: 70px;
+}
+
+.requisites fieldset, .requisites label {
+  margin-bottom: 20px;
+}
+.requisites span {
+  display: inline-block;
+  width: 45%;
+}
+.requisites input {
+  width: 45%;
 }
 
 .section-wrap {
@@ -527,11 +558,6 @@ section .add-category {
   font-weight: 600;
 }
 
-.mattress {
-  float: left;
-  margin-right: 20px;
-}
-
 .category-product h2, .category-partner h2 {
   margin-bottom: 30px;
 }
@@ -549,32 +575,33 @@ table {
   width: 100%;
 }
 
-.modal-news, .modal-category, .modal-product, .modal-del, .modal-partner, .modal-partner-edit {
+.modal-news-add, .modal-category-add, .modal-product, .modal-del, .modal-partner-add, .modal-partner-edit, .modal-save, .modal-send, .modal-downloads-add {
   position: relative;
   background: #FFF;
-  padding: 20px;
+  padding: 10px 20px;
   width: auto;
   max-width: 1000px;
   margin: 20px auto;
+  border: 2px solid #363636;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-.modal-news .button, .modal-category .button, .modal-product .button, .modal-del .button, .modal-partner .button, .modal-partner-edit .button {
+.modal-news-add .button, .modal-category-add .button, .modal-product .button, .modal-del .button, .modal-partner-add .button, .modal-partner-edit .button, .modal-save .button, .modal-send .button, .modal-downloads-add .button {
   display: block;
   margin: 0 auto;
-  width: 100px;
+  width: 90px;
 }
 
-.modal-category {
+.modal-category-add, .modal-send, .modal-downloads-add {
   max-width: 500px;
 }
 
-.modal-del {
+.modal-del, .modal-save {
   max-width: 250px;
 }
 
-.modal-partner {
+.modal-partner-edit, .modal-partner-add {
   max-width: 600px;
 }
 
@@ -587,60 +614,85 @@ table {
   margin-left: 10px;
 }
 
-#modal-news .popup-modal-dismiss, #modal-category .popup-modal-dismiss, #modal-product .popup-modal-dismiss, #modal-del .popup-modal-dismiss, #modal-partner .popup-modal-dismiss, #modal-partner-edit .popup-modal-dismiss {
+#modal-news-add .popup-modal-dismiss, #modal-category-add .popup-modal-dismiss, #modal-product .popup-modal-dismiss, #modal-del .popup-modal-dismiss, #modal-partner-add .popup-modal-dismiss, #modal-partner-edit .popup-modal-dismiss, #modal-save .popup-modal-dismiss, #modal-send .popup-modal-dismiss, #modal-downloads-add .popup-modal-dismiss {
   display: block;
-  font-size: 26px;
+  font-size: 24px;
   text-align: right;
 }
-#modal-news .edit-item, #modal-category .edit-item, #modal-product .edit-item, #modal-del .edit-item, #modal-partner .edit-item, #modal-partner-edit .edit-item {
+#modal-news-add .edit-item, #modal-category-add .edit-item, #modal-product .edit-item, #modal-del .edit-item, #modal-partner-add .edit-item, #modal-partner-edit .edit-item, #modal-save .edit-item, #modal-send .edit-item, #modal-downloads-add .edit-item {
   padding: 20px 0 0;
   border-top: 1px solid #c0c0c0;
 }
-#modal-news label, #modal-news fieldset, #modal-category label, #modal-category fieldset, #modal-product label, #modal-product fieldset, #modal-del label, #modal-del fieldset, #modal-partner label, #modal-partner fieldset, #modal-partner-edit label, #modal-partner-edit fieldset {
+#modal-news-add label, #modal-news-add fieldset, #modal-category-add label, #modal-category-add fieldset, #modal-product label, #modal-product fieldset, #modal-del label, #modal-del fieldset, #modal-partner-add label, #modal-partner-add fieldset, #modal-partner-edit label, #modal-partner-edit fieldset, #modal-save label, #modal-save fieldset, #modal-send label, #modal-send fieldset, #modal-downloads-add label, #modal-downloads-add fieldset {
   margin-bottom: 20px;
 }
-#modal-news input, #modal-category input, #modal-product input, #modal-del input, #modal-partner input, #modal-partner-edit input {
+#modal-news-add input, #modal-category-add input, #modal-product input, #modal-del input, #modal-partner-add input, #modal-partner-edit input, #modal-save input, #modal-send input, #modal-downloads-add input {
   width: 100%;
   margin-bottom: 20px;
 }
-#modal-news textarea, #modal-category textarea, #modal-product textarea, #modal-del textarea, #modal-partner textarea, #modal-partner-edit textarea {
+#modal-news-add textarea, #modal-category-add textarea, #modal-product textarea, #modal-del textarea, #modal-partner-add textarea, #modal-partner-edit textarea, #modal-save textarea, #modal-send textarea, #modal-downloads-add textarea {
   width: 100%;
 }
-#modal-news p, #modal-category p, #modal-product p, #modal-del p, #modal-partner p, #modal-partner-edit p {
+#modal-news-add p, #modal-category-add p, #modal-product p, #modal-del p, #modal-partner-add p, #modal-partner-edit p, #modal-save p, #modal-send p, #modal-downloads-add p {
   margin: 20px 0 30px 0;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 
-#modal-partner fieldset, #modal-partner-edit fieldset {
+#modal-partner-add fieldset, #modal-partner-edit fieldset {
   margin-bottom: 10px;
 }
-#modal-partner label, #modal-partner-edit label {
+#modal-partner-add label, #modal-partner-edit label {
   display: inline-block;
   width: 25%;
   margin-bottom: 0;
   vertical-align: middle;
   font-size: 14px;
 }
-#modal-partner input, #modal-partner-edit input {
+#modal-partner-add input, #modal-partner-edit input {
   width: 400px;
   height: 25px;
   margin-bottom: 0;
 }
-#modal-partner input[name="discount"], #modal-partner input[name="balance"], #modal-partner-edit input[name="discount"], #modal-partner-edit input[name="balance"] {
-  width: 70px;
+#modal-partner-add input[name="discount"], #modal-partner-edit input[name="discount"] {
+  width: 46px;
   margin-left: 20px;
 }
-#modal-partner p, #modal-partner-edit p {
+#modal-partner-add input[name="balance"], #modal-partner-edit input[name="balance"] {
+  width: 55px;
+  margin-left: 20px;
+}
+#modal-partner-add p, #modal-partner-edit p {
   display: inline-block;
   width: 50px;
   margin: 0;
 }
+#modal-partner-add.select2-search, #modal-partner-add.select2-search--dropdown, #modal-partner-edit.select2-search, #modal-partner-edit.select2-search--dropdown {
+  display: none;
+  border: none;
+}
+#modal-partner-add input[type="search"], #modal-partner-edit input[type="search"] {
+  display: none;
+}
+#modal-partner-add .partner-balance a, #modal-partner-edit .partner-balance a {
+  display: inline-block;
+}
+#modal-partner-add .partner-balance input, #modal-partner-edit .partner-balance input {
+  display: inline-block;
+}
+
+#modal-send input {
+  margin-bottom: 0 !important;
+  width: 300px !important;
+}
 
 .fieldset-group {
   display: inline-block;
-  margin-right: 20px;
+}
+
+.select2-container--default .select2-selection--single {
+  outline: none;
 }
 
 /* 6. FOOTER */

@@ -32,7 +32,7 @@
 	<!-- ===== CONTENT ALL ====== -->
 	<content>
 		<!-- Sidebar -->
-		<aside>		
+		<aside>
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
@@ -53,14 +53,14 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="store_summary-table.html">Сводная таблица</a></li>
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
 						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="document_requisites.html">Реквизты</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -68,117 +68,66 @@
 		<!-- Sidebar end -->
 		<!-- Content -->
 		<div class="cnt">
-			<section style="overflow: hidden;">
-				<h2><i class="fa fa-table" aria-hidden="true"></i>Сводная таблица склада</h2>
-				<table class="table-store" cellspacing="0">
-					<thead>
-						<tr>
-							<th>Матрасы</th>
-							<th>Размер</th>
-							<th>Наличие</th>
-							<th>Забронированные</th>
-							<th>Оформленные</th>
-							<th>Заказанные</th>
-						</tr>
-					</thead>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/200</th>
-						<td>3</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>90/190</th>
-						<td>3</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Ergo 3D</th>
-						<th>80/190</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-				</table>
-				<table class="table-store" cellspacing="0">
-					<thead>
-						<tr>
-							<th>Подушки</th>
-							<th>Размер</th>
-							<th>Наличие</th>
-							<th>Забронированные</th>
-							<th>Оформленные</th>
-							<th>Заказанные</th>
-						</tr>
-					</thead>
-					<tr>
-						<th>Termopur</th>
-						<th>50/70</th>
-						<td>5</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>London</th>
-						<th>50/70</th>
-						<td>3</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<th>Paris</th>
-						<th>50/70</th>
-						<td>3</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
+			<section class="requisites">
+				<form>
+					<label>Постачальник</label>
+					<fieldset>
+						<span>ФОП Коваленко Геннадій Сергійович</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>IH 2978107551</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>Адреса: 02166 м. Київ, вул. Волкова 24/84</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>тел. +38(093) 329-69-99</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>www.materasso.net.ua</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>materasso@ukr.net</span>
+						<input type="email" name="email">
+					</fieldset>
+					<fieldset>
+						<span>Р/р  26008052625333</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>в ПЕЧЕРСЬКА Ф.ПАТ КБ"ПРИВАТБАНК", ПЕЧЕРСЬКА Ф.ПАТ КБ"ПРИВАТБАНК" м. Київ</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>МФО 300711</span>
+						<input type="text" name="text">
+					</fieldset>
+					<fieldset>
+						<span>Не є платником податку на прибуток на загальних підставах</span>
+						<input type="text" name="text">
+					</fieldset>
+				</form>
+				<a href="#modal-save" title="сохранить" class="button popup-modal">Сохранить?</a>
 			</section>
 		</div>
 		<!-- Content end -->
 	</content>
 	<!-- ===== CONTENT ALL END ===== -->
+
+	<!-- ===== MODAL WINDOW ALL ===== -->
+	
+	<!-- Modal save -->
+	<div id="modal-save" class="modal-save mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<p>Сохранить?</p>
+		<a href="#" class="button">Да</a>
+	</div>
+	<!-- Modal save end-->
 
 	<!-- ===== SCRIPTS ===== -->
 

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,27 +15,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
-			<a href="index.html" class="logo">Materasso AdminPanel</a>			
+			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
-		<aside>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
+		<aside>
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="main_course.html">Курс валюты</a></li>						
+						<li><a href="main_course.html">Курс валюты</a></li>
 						<li><a href="main_news.html">Новости</a></li>
 						<li><a href="main_downloads.html">Файлы для скачивания</a></li>
 					</ul>
@@ -51,58 +53,90 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
 						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Добавить новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
-				</li>							
+				</li>
 			</ul>
 		</aside>
-		<div class="cnt">						
+		<!-- Sidebar end -->
+		<!-- Content -->
+		<div class="cnt">
 			<section>
 				<h2>
 					<i class="fa fa-download" aria-hidden="true"></i>
 					Файлы для скачивания
-					<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+					<a href="#modal-downloads-add" title="добавить" class="button popup-modal m-left"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
 				</h2>
-				<div class="section-wrap">					
+				<div class="section-wrap">
 					<ul>
 						<li>
 							<span class="inner-one">12.03.2017</span>
 							<span class="inner-two">Заглавие файла 1</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>				
+							<a href="#modal-downloads-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 						</li>
 						<li>
 							<span class="inner-one">12.03.2017</span>
 							<span class="inner-two">Заглавие файла 2</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>				
+							<a href="#modal-downloads-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 						</li>
 						<li>
 							<span class="inner-one">12.03.2017</span>
 							<span class="inner-two">Заглавие файла 3</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>				
+							<a href="#modal-downloads-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
-			</section>	
+			</section>
 		</div>
-				
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
+	<!-- ===== MODAL WINDOW ALL ===== -->
+
+	<!-- Modal window downloads add -->
+	<div id="modal-downloads-add" class="modal-downloads-add mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<h3>Редактирование/добавление документа</h3>
+		<div class="edit-item">
+			<fieldset>
+				<label for="title-downloads">Название документа</label>
+				<input id="title-downloads" type="text" name="text">
+			</fieldset>
+			<fieldset>
+				<label>Прикрепить документ</label>
+				<input type="file" name="file">
+			</fieldset>
+		</div>
+		<a href="#" class="button">Сохранить</a>
+	</div>
+	<!-- Modal window downloads add end-->
+	
+	<!-- Modal window del -->
+	<div id="modal-del" class="modal-del mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<p>Вы уверены?</p>
+		<a href="#" class="button">Да</a>
+	</div>
+	<!-- Modal window del end-->
+
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>

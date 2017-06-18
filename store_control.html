@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,21 +15,23 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.min.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
 			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
 		<aside>		
 			<ul id="accordion" class="accordion">
 				<li>
@@ -51,23 +53,23 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
 						<li><a href="partner_control.html">Меню партнеров</a></li>						
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
 				</li>							
 			</ul>
 		</aside>
-		<div class="cnt">			
+		<!-- Sidebar end -->
+		<!-- Content -->
+		<div class="cnt">
 			<section class="category-product">
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню склада</h2>		
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню склада</h2>
 				<form action="">
 					<fieldset>
 						<label class="product-label">Редактор категорий:</label>
@@ -76,9 +78,9 @@
 								<option>Матрасы</option>
 								<option>Подушки</option>
 								<option>Каркасы</option>
-						</select>						
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						</select>
+						<a href="#modal-category-add" title="добавить" class="button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#modal-category-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 					</fieldset>
 					<fieldset>
@@ -89,8 +91,8 @@
 								<option>Fizio 3D</option>
 								<option>Termopur 3D</option>
 						</select>
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#modal-category-add" title="добавить" class="button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#modal-category-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 					</fieldset>
 					<fieldset>
@@ -101,14 +103,14 @@
 								<option>90/190</option>
 								<option>100/190</option>
 						</select>
-						<a href="#modal-category" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
-						<a href="#modal-category" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+						<a href="#modal-category-add" title="добавить" class="button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						<a href="#modal-category-add" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 					</fieldset>
-				</form>								
+				</form>
 			</section>
 			<section style="overflow: hidden;">
-				<h2><i class="fa fa-download" aria-hidden="true"></i>Товар</h2>
+				<h2><i class="fa fa-shopping-basket" aria-hidden="true"></i>Товар</h2>
 				<table class="table-store product" cellspacing="0">
 					<thead>
 						<tr>
@@ -134,26 +136,30 @@
 							<a href="#modal-product" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						</td>
 					</tr>
-				</table>				
+				</table>
 			</section>	
 		</div>
-				
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
-	<!-- ===== Модальное окно ===== -->
+	<!-- ===== MODAL WINDOW ALL ===== -->
 
-	<div id="modal-category" class="modal-category mfp-hide">
+	<!-- Modal window category-add -->
+	<div id="modal-category-add" class="modal-category-add mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 		<h3>Редактирование/добавление</h3>
-		<div class="edit-item">			
+		<div class="edit-item">
 			<fieldset>
 				<label>Новая(ый)</label>
 				<textarea></textarea>
 			</fieldset>
 			<a href="#" class="button">Сохранить</a>
-		</div>		
+		</div>
 	</div>
+	<!-- Modal window category-add end-->
 
+	<!-- Modal window product -->
 	<div id="modal-product" class="modal-product mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 		<h3>Редактирование товара</h3>
@@ -167,7 +173,7 @@
 							<th>Наличие</th>
 							<th>Ширина</th>
 							<th>Длина</th>
-							<th>Высота</th>							
+							<th>Высота</th>
 						</tr>
 					</thead>
 					<tr>
@@ -177,22 +183,28 @@
 						<th>5<input type="text" name="text"></th>
 						<th>80<input type="text" name="text"></th>
 						<th>190<input type="text" name="text"></th>
-						<th>15<input type="text" name="text"></th>						
+						<th>15<input type="text" name="text"></th>
 				</table>
 			<a href="#" class="button">Сохранить</a>
-		</div>		
+		</div>
 	</div>
+	<!-- Modal window product end-->
 
+	<!-- Modal window del -->
 	<div id="modal-del" class="modal-del mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 		<p>Вы уверены?</p>
 		<a href="#" class="button">Да</a>
 	</div>
+	<!-- Modal window del end-->
 
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,27 +15,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.min.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
-			<a href="index.html" class="logo">Materasso AdminPanel</a>			
+			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
-		<aside>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
+		<aside>
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="main_course.html">Курс валюты</a></li>			
+						<li><a href="main_course.html">Курс валюты</a></li>
 						<li><a href="main_news.html">Новости</a></li>
 						<li><a href="main_downloads.html">Файлы для скачивания</a></li>
 					</ul>
@@ -51,20 +53,20 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
+						<li><a href="document_requisites.html">Сводная таблица</a></li>
 						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>						
 					</ul>
-				</li>							
+				</li>
 			</ul>
 		</aside>
+		<!-- Sidebar end -->
+		<!-- Content -->
 		<div class="cnt">
 			<section class="course">
 				<form>
@@ -72,15 +74,30 @@
 					<span>30</span>
 					<input type="text" name="course" id="course">
 				</form>
-				<a href="#" title="сохранить" class="button"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-			</section>	
-		</div>				
+				<a href="#modal-save" title="сохранить" class="button popup-modal"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+			</section>
+		</div>
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
+	<!-- ===== MODAL WINDOW ALL ===== -->
+	
+	<!-- Modal save -->
+	<div id="modal-save" class="modal-save mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<p>Сохранить?</p>
+		<a href="#" class="button">Да</a>
+	</div>
+	<!-- Modal save end-->
+
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>

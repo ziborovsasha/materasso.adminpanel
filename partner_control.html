@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,27 +15,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.min.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
 			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
-		<aside>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
+		<aside>
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="main_course.html">Курс валюты</a></li>			
+						<li><a href="main_course.html">Курс валюты</a></li>
 						<li><a href="main_news.html">Новости</a></li>
 						<li><a href="main_downloads.html">Файлы для скачивания</a></li>
 					</ul>
@@ -50,39 +52,39 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
-						<li><a href="partner_control.html">Меню партнеров</a></li>						
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
+						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
-				</li>							
+				</li>
 			</ul>
 		</aside>
-		<div class="cnt">			
+		<!-- Sidebar end -->
+		<!-- Content -->
+		<div class="cnt">
 			<section class="category-partner">
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню партнеров</h2>	
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню партнеров</h2>
 				<form action="">
 					<fieldset>
-						<label class="product-label">Редактировать/добавить партнера:</label>
+						<label class="product-label">Добавить/удалить партнера:</label>
 						<select class="select">
 							<option>Пожалуйста, выберите партнера:</option>
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
-						</select>						
-						<a href="#modal-partner" title="добавить" class="add-category button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+						</select>
+						<a href="#modal-partner-add" title="добавить" class="button popup-modal"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
 						<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-					</fieldset>			
-				</form>								
+					</fieldset>
+				</form>
 			</section>
 			<section class="section-partner" style="overflow: hidden;">
-				<h2><i class="fa fa-download" aria-hidden="true"></i>Партнер</h2>
+				<h2><i class="fa fa-user" aria-hidden="true"></i>Партнер</h2>
 				<table class="table-store product" cellspacing="0">
 					<thead>
 						<tr>
@@ -90,7 +92,8 @@
 							<th>Контактное лицо</th>
 							<th>Телефон для связи</th>
 							<th>Скидка</th>
-							<th>Баланс</th>							
+							<th>Баланс</th>
+							<th>Состояние</th>
 							<th>Редактировать</th>
 						</tr>
 					</thead>
@@ -99,33 +102,36 @@
 						<td>Коваленко Геннадий Серегеевич</td>
 						<td>+380(66)4444444</td>
 						<td>30%</td>
-						<td>500 &euro;</td>												
+						<td>500 &euro;</td>
+						<td>Активный</td>
 						<td>
 							<a href="#modal-partner-edit" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 						</td>
 					</tr>
-				</table>				
-			</section>	
+				</table>
+			</section>
 		</div>
-				
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
-	<!-- ===== Модальное окно ===== -->
+	<!-- ===== MODAL WINDOW ALL ===== -->
 
-	<div id="modal-partner" class="modal-partner mfp-hide">
+	<!-- Modal window partner-add -->
+	<div id="modal-partner-add" class="modal-partner-add mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<h3>Редактирование/добавление</h3>
-		<div class="edit-item">			
+		<h3>Добавить нового партнера</h3>
+		<div class="edit-item">
 			<fieldset>
 				<label>Название</label>
 				<input type="text" name="name">
-			</fieldset>		
+			</fieldset>
 			<fieldset>
 				<label>Тип клиента</label>
 				<select class="select">
 					<option>Пожалуйста, выберите тип:</option>
 					<option>Юредическое лицо</option>
-					<option>Физическое лицо</option>					
+					<option>Физическое лицо</option>
 				</select>
 			</fieldset>
 			<fieldset>
@@ -181,23 +187,25 @@
 				<input type="file" name="file">
 			</fieldset>
 			<a href="#" class="button">Сохранить</a>
-		</div>		
+		</div>
 	</div>
+	<!-- Modal window partner-add end-->
 
-	<div id="modal-partner-edit" class="modal-partner mfp-hide">
+	<!-- Modal window partner-edit -->
+	<div id="modal-partner-edit" class="modal-partner-edit mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<h3>Редактирование/добавление</h3>
-		<div class="edit-item">			
+		<h3>Редактирование партнера</h3>
+		<div class="edit-item">
 			<fieldset>
 				<label>Название</label>
 				<input type="text" name="name">
-			</fieldset>		
+			</fieldset>
 			<fieldset>
 				<label>Тип клиента</label>
 				<select class="select">
 					<option>Пожалуйста, выберите тип:</option>
 					<option>Юредическое лицо</option>
-					<option>Физическое лицо</option>					
+					<option>Физическое лицо</option>
 				</select>
 			</fieldset>
 			<fieldset>
@@ -257,25 +265,41 @@
 				<p>30</p>
 				<input type="text" name="discount">
 			</fieldset>
-			<fieldset>
+			<fieldset class="partner-balance">
 				<label>Баланс</label>
 				<p>30000</p>
 				<input type="text" name="balance">
+				<a href="#" class="button">Добавить</a>
+				<input type="text" name="balance">
+				<a href="#" class="button">Отнять</a>
+			</fieldset>
+			<fieldset>
+				<label>Состояние</label>
+				<select class="select">	
+					<option>Активный</option>
+					<option>Неактивный</option>
+				</select>
 			</fieldset>
 			<a href="#" class="button">Сохранить</a>
 		</div>		
 	</div>
+	<!-- Modal window partner-edit end-->
 
+	<!-- Modal window del -->
 	<div id="modal-del" class="modal-del mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<p class="modal-del">Вы уверены?</p>
+		<p>Вы уверены?</p>
 		<a href="#" class="button">Да</a>
 	</div>
+	<!-- Modal window del end-->
 
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,27 +15,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.min.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
-			<a href="index.html" class="logo">Materasso AdminPanel</a>			
+			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
-		<aside>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
+		<aside>
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="main_course.html">Курс валюты</a></li>			
+						<li><a href="main_course.html">Курс валюты</a></li>
 						<li><a href="main_news.html">Новости</a></li>
 						<li><a href="main_downloads.html">Файлы для скачивания</a></li>
 					</ul>
@@ -51,20 +53,20 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
-						<li><a href="partner_control.html">Меню партнеров</a></li>						
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
+						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
-				</li>							
+				</li>
 			</ul>
 		</aside>
+		<!-- Sidebar end -->
+		<!-- Content -->
 		<div class="cnt">
 			<section class="course">
 				<form>
@@ -72,77 +74,275 @@
 					<span>30</span>
 					<input type="text" name="course" id="course">
 				</form>
-				<a href="#" title="сохранить" class="button"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+				<a href="#modal-save" title="сохранить" class="button popup-modal"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
 			</section>
 			<section>
 				<h2>
-					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
-					Новости компании Materasso 
-					<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Новые партнеры :
 				</h2>
-				<div class="section-wrap">					
-					<ul>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие новости 1</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
-							<a href="#" title="разослать" class="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-						</li>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие новости 2</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
-							<a href="#" title="разослать" class="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-						</li>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие новости 3</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
-							<a href="#" title="разослать" class="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-						</li>
-					</ul>
-				</div>
+					<table class="table-store" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Название</th>
+								<th>Контактное лицо</th>
+								<th>Телефон для связи</th>
+								<th>Состояние</th>
+								<th>Редактировать</th>
+							</tr>
+						</thead>
+						<tr>
+							<th>ФОП Коваленко</th>
+							<td>Коваленко Геннадий Серегеевич</td>
+							<td>+380(66)4444444</td>
+							<td>Новый</td>
+							<td>
+								<a href="#modal-partner-edit" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+					</table>
+					<table class="table-store" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Название</th>
+								<th>Контактное лицо</th>
+								<th>Телефон для связи</th>
+								<th>Состояние</th>
+								<th>Редактировать</th>
+							</tr>
+						</thead>
+						<tr>
+							<th>ФОП Коваленко</th>
+							<td>Коваленко Геннадий Серегеевич</td>
+							<td>+380(66)4444444</td>
+							<td>Новый</td>
+							<td>
+								<a href="#modal-partner-edit" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+					</table>
 			</section>
 			<section>
 				<h2>
-					<i class="fa fa-download" aria-hidden="true"></i>
-					Файлы для скачивания
-					<a href="#" title="добавить" class="add-category button"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+					<i class="fa fa-recycle" aria-hidden="true"></i>
+					Новые заказы :
 				</h2>
-				<div class="section-wrap">					
-					<ul>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие файла 1</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>							
-						</li>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие файла 2</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>							
-						</li>
-						<li>
-							<span class="inner-one">12.03.2017</span>
-							<span class="inner-two">Заглавие файла 3</span>
-							<a href="#" title="редактировать" class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="#" title="удалить" class="button"><i class="fa fa-trash" aria-hidden="true"></i></a>							
-						</li>
-					</ul>
-				</div>
-			</section>	
+				<h4 class="title-init">Забронировано (шт.)</h4>
+				<span class="quantity">6</span>
+				<table class="table-store" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Дата</th>
+								<th>Время</th>
+								<th>Партнер</th>
+								<th>Товар</th>
+								<th>Кол-во (шт.)</th>
+								<th>Цена (&euro;)</th>
+								<th>Ред.</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>12.06.17</td>
+							<td>12:00</td>
+							<td>ФОП Коваленко</td>
+							<td>Ergo 3D 80/190</td>
+							<td>2</td>
+							<td>500</td>
+							<td>
+								<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>12.06.17</td>
+							<td>12:00</td>
+							<td>ФОП Коваленко</td>
+							<td>Ergo 3D 80/190</td>
+							<td>4</td>
+							<td>500</td>
+							<td>
+								<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+					</table>
+					<h4 class="title-init">Оформлено (шт.)</h4>
+				<span class="quantity">6</span>
+				<table class="table-store" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Дата</th>
+								<th>Время</th>
+								<th>Партнер</th>
+								<th>Товар</th>
+								<th>Кол-во (шт.)</th>
+								<th>Цена (&euro;)</th>
+								<th colspan="3">Состояние заказа</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>12.06.17</td>
+							<td>12:00</td>
+							<td>ФОП Коваленко</td>
+							<td>Ergo 3D 80/190</td>
+							<td>2</td>
+							<td>500</td>
+							<td><input type="checkbox" name="option2" value="a2">Оплачен</td>
+							<td><input type="checkbox" name="option2" value="a2">Отгружен</td>
+							<td>
+								<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>Ergo 3D 100/190</td>
+							<td>4</td>
+							<td>500</td>
+							<td><input type="checkbox" name="option2" value="a2">Оплачен</td>
+							<td><input type="checkbox" name="option2" value="a2">Отгружен</td>
+							<td>
+								<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<th>Итого :</th>
+							<th>6</th>
+							<th>1000</th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>
+								<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+					</table>
+			</section>
 		</div>
-				
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
+	<!-- ===== MODAL WINDOW ALL ===== -->
+
+	<!-- Modal window partner-edit -->
+	<div id="modal-partner-edit" class="modal-partner-edit mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<h3>Редактирование партнера</h3>
+		<div class="edit-item">
+			<fieldset>
+				<label>Название</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Тип клиента</label>
+				<select class="select">
+					<option>Пожалуйста, выберите тип:</option>
+					<option>Юредическое лицо</option>
+					<option>Физическое лицо</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label>Адрес юридический</label>
+				<input type="text" name="address">
+			</fieldset>
+			<fieldset>
+				<label>Адрес фактический</label>
+				<input type="text" name="address">
+			</fieldset>
+			<fieldset>
+				<label>Код ЕДРПОУ</label>
+				<input type="text" name="code">
+			</fieldset>
+			<fieldset>
+				<label>Название банка</label>
+				<input type="text" name="bank">
+			</fieldset>
+			<fieldset>
+				<label>Расчетный счет</label>
+				<input type="text" name="bank">
+			</fieldset>
+			<fieldset>
+				<label>ФИО директора</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>E-mail директора</label>
+				<input type="email" name="email">
+			</fieldset>			
+			<fieldset>
+				<label>Телефон директора</label>
+				<input type="tel" name="tel">
+			</fieldset>
+			<fieldset>
+				<label>Контактное лицо</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>E-mail для связи</label>
+				<input type="email" name="email">
+			</fieldset>
+			<fieldset>
+				<label>Телефон для связи</label>
+				<input type="tel" name="tel">
+			</fieldset>
+			<fieldset>
+				<label>Сайт компании</label>
+				<input type="text" name="name">
+			</fieldset>
+			<fieldset>
+				<label>Прикрепить копию документа (Выписка о Гос. Регистрации)</label>
+				<input type="file" name="file">
+			</fieldset>
+			<fieldset>
+				<label>Скидка %</label>
+				<p>30</p>
+				<input type="text" name="discount">
+			</fieldset>
+			<fieldset class="partner-balance">
+				<label>Баланс</label>
+				<p>30000</p>
+				<input type="text" name="balance">
+				<a href="#" class="button">Добавить</a>
+				<input type="text" name="balance">
+				<a href="#" class="button">Отнять</a>
+			</fieldset>
+			<fieldset>
+				<label>Состояние</label>
+				<select class="select">	
+					<option>Активный</option>
+					<option>Неактивный</option>
+				</select>
+			</fieldset>
+			<a href="#" class="button">Сохранить</a>
+		</div>		
+	</div>
+	<!-- Modal window partner-edit end-->
+
+	<!-- Modal window del -->
+	<div id="modal-del" class="modal-del mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<p>Вы уверены?</p>
+		<a href="#" class="button">Да</a>
+	</div>
+	<!-- Modal window del end -->
+
+	<!-- Modal window save -->
+	<div id="modal-save" class="modal-save mfp-hide">
+		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<p>Сохранить?</p>
+		<a href="#" class="button">Да</a>
+	</div>
+	<!-- Modal window save end-->
+
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>

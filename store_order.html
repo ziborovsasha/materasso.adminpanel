@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -15,27 +15,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">	
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link media="all" rel="stylesheet" href="css/font-awesome.css">
 	<link media="all" rel="stylesheet" href="css/select2.min.css">
 	<link media="all" rel="stylesheet" href="css/magnific-popup.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- ===== HEADER ===== -->
 	<header id="header">
 		<div class="wrapper">
 			<a href="index.html" class="logo">Materasso AdminPanel</a>
 		</div>
 	</header>
-
-	<content>		
+	<!-- ===== HEADER END ===== -->
+	<!-- ===== CONTENT ALL ====== -->
+	<content>
+		<!-- Sidebar -->
 		<aside>		
 			<ul id="accordion" class="accordion">
 				<li>
 					<div class="link"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="main_course.html">Курс валюты</a></li>			
+						<li><a href="main_course.html">Курс валюты</a></li>
 						<li><a href="main_news.html">Новости</a></li>
 						<li><a href="main_downloads.html">Файлы для скачивания</a></li>
 					</ul>
@@ -51,23 +53,23 @@
 				<li>
 					<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнеры<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Сводная таблица</a></li>
-						<li><a href="partner_control.html">Меню партнеров</a></li>						
+						<li><a href="partner_summary-table.html">Сводная таблица</a></li>
+						<li><a href="partner_control.html">Меню партнеров</a></li>
 					</ul>
 				</li>
 				<li>
 					<div class="link"><i class="fa fa-file-text" aria-hidden="true"></i>Документы<i class="fa fa-chevron-down"></i></div>
 					<ul class="submenu">
-						<li><a href="#">Счет фактура</a></li>
-						<li><a href="#">Расходная накладная</a></li>
-						<li><a href="#">Новый документ</a></li>
+						<li><a href="document_requisites.html">Реквизиты</a></li>
 					</ul>
-				</li>							
+				</li>
 			</ul>
 		</aside>
-		<div class="cnt">			
+		<!-- Sidebar end -->
+		<!-- Content -->
+		<div class="cnt">
 			<section class="category-partner">
-				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню заказов</h2>	
+				<h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>Меню заказов</h2>
 				<form action="">
 					<fieldset>
 						<label class="product-label">Выберете партнера:</label>
@@ -76,7 +78,7 @@
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
 								<option>ФОП Коваленко</option>
-						</select>						
+						</select>
 					</fieldset>
 					<fieldset>
 						<label class="product-label">Выберете категорию товара:</label>
@@ -85,7 +87,7 @@
 							<option>Матрасы</option>
 							<option>Подушки</option>
 							<option>Каркасы</option>
-						</select>						
+						</select>
 					</fieldset>
 					<fieldset>
 						<label class="product-label">Выберете модель товара:</label>
@@ -94,7 +96,7 @@
 							<option>Ergo 3D</option>
 							<option>Fizio 3D</option>
 							<option>Termopur 3D</option>
-						</select>						
+						</select>
 					</fieldset>
 					<fieldset>
 						<label class="product-label">Выберете размер товара:</label>
@@ -103,221 +105,98 @@
 							<option>80/190</option>
 							<option>90/190</option>
 							<option>100/190</option>
-						</select>						
+						</select>
 					</fieldset>
 					<fieldset class="fieldset-group">
-						<label class="product-label">Зарезервировать</label>						
-						<input type="text" name="reserve" size="6"> шт.				
+						<label class="product-label">Кол-во</label>
+						<input type="text" name="reserve" size="2"> шт.
+						<a href="#" title="добавить" class="button lg">Добавить</a>
 					</fieldset>
-					<fieldset class="fieldset-group">
-						<label class="product-label">Оформить</label>						
-						<input type="text" name="reserve" size="6"> шт.				
-					</fieldset>				
-				</form>								
+				</form>
 			</section>
 			<section class="section-partner" style="overflow: hidden;">
-				<h2><i class="fa fa-download" aria-hidden="true"></i>Заказ</h2>
+				<h2><i class="fa fa-recycle" aria-hidden="true"></i>Заказ</h2>
 				<table class="table-store product" cellspacing="0">
 					<thead>
 						<tr>
-							<th>Название</th>
-							<th>Контактное лицо</th>
-							<th>Телефон для связи</th>
+							<th>Партнер</th>
+							<th>Категория</th>
 							<th>Модель</th>
 							<th>Размер</th>
-							<th>Скидка</th>							
-							<th>Баланс</th>
-							<th>Резерв</th>
-							<th>Оформлено</th>							
+							<th>Кол-во</th>
+							<th>Цена</th>
+							<th>Скидка</th>
+							<th>Цена со скидкой</th>
 							<th>Редак.</th>
 						</tr>
 					</thead>
 					<tr>
 						<th>ФОП Коваленко</th>
-						<td>Коваленко Геннадий Серегеевич</td>
-						<td>+380(66)4444444</td>
-						<td>Ergo 3D</td>
-						<td>80/190</td>
+						<td>Матрас</td>
+						<td>Termopur 3D</td>
+						<td>100/190</td>
+						<td>2</td>
+						<td>400 &euro;</td>
 						<td>30%</td>
-						<td>500 &euro;</td>
-						<td>5</td>
-						<td>7</td>											
+						<td>280 &euro;</td>
 						<td>
-							<a href="#modal-partner-edit" title="редактировать" class="button popup-modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
 						</td>
 					</tr>
-				</table>				
-			</section>	
+					<tr>
+						<th>&nbsp;</th>
+						<td>Матрас</td>
+						<td>Ergo 3D</td>
+						<td>80/190</td>
+						<td>1</td>
+						<td>150 &euro;</td>
+						<td>30%</td>
+						<td>105 &euro;</td>
+						<td>
+							<a href="#modal-del" title="удалить" class="button popup-modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<th>&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<th>Итого :</th>
+						<th>385 &euro;</th>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				<div class="text-align-right">
+					<a href="#" title="забронировать товар" class="button lg">Забронировать</a>
+					<a href="#" title="оформить товар" class="button lg">Оформить</a>
+					<a href="#" title="заказать товар" class="button lg">Заказные</a>
+					<a href="#" title="отменить заказ" class="button lg">Отменить</a>
+				</div>
+			</section>
 		</div>
-				
+		<!-- Content end -->
 	</content>
+	<!-- ===== CONTENT ALL END ===== -->
 
-	<!-- ===== Модальное окно ===== -->
+	<!-- ===== MODAL WINDOW ALL ===== -->
 
-	<div id="modal-partner" class="modal-partner mfp-hide">
-		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<h3>Редактирование/добавление</h3>
-		<div class="edit-item">			
-			<fieldset>
-				<label>Название</label>
-				<input type="text" name="name">
-			</fieldset>		
-			<fieldset>
-				<label>Тип клиента</label>
-				<select class="select">
-					<option>Пожалуйста, выберите тип:</option>
-					<option>Юредическое лицо</option>
-					<option>Физическое лицо</option>					
-				</select>
-			</fieldset>
-			<fieldset>
-				<label>Адрес юридический</label>
-				<input type="text" name="address">
-			</fieldset>
-			<fieldset>
-				<label>Адрес фактический</label>
-				<input type="text" name="address">
-			</fieldset>
-			<fieldset>
-				<label>Код ЕДРПОУ</label>
-				<input type="text" name="code">
-			</fieldset>
-			<fieldset>
-				<label>Название банка</label>
-				<input type="text" name="bank">
-			</fieldset>
-			<fieldset>
-				<label>Расчетный счет</label>
-				<input type="text" name="bank">
-			</fieldset>
-			<fieldset>
-				<label>ФИО директора</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>E-mail директора</label>
-				<input type="email" name="email">
-			</fieldset>			
-			<fieldset>
-				<label>Телефон директора</label>
-				<input type="tel" name="tel">
-			</fieldset>
-			<fieldset>
-				<label>Контактное лицо</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>E-mail для связи</label>
-				<input type="email" name="email">
-			</fieldset>
-			<fieldset>
-				<label>Телефон для связи</label>
-				<input type="tel" name="tel">
-			</fieldset>
-			<fieldset>
-				<label>Сайт компании</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>Прикрепить копию документа (Выписка о Гос. Регистрации)</label>
-				<input type="file" name="file">
-			</fieldset>
-			<a href="#" class="button">Сохранить</a>
-		</div>		
-	</div>
-
-	<div id="modal-partner-edit" class="modal-partner mfp-hide">
-		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<h3>Редактирование/добавление</h3>
-		<div class="edit-item">			
-			<fieldset>
-				<label>Название</label>
-				<input type="text" name="name">
-			</fieldset>		
-			<fieldset>
-				<label>Тип клиента</label>
-				<select class="select">
-					<option>Пожалуйста, выберите тип:</option>
-					<option>Юредическое лицо</option>
-					<option>Физическое лицо</option>					
-				</select>
-			</fieldset>
-			<fieldset>
-				<label>Адрес юридический</label>
-				<input type="text" name="address">
-			</fieldset>
-			<fieldset>
-				<label>Адрес фактический</label>
-				<input type="text" name="address">
-			</fieldset>
-			<fieldset>
-				<label>Код ЕДРПОУ</label>
-				<input type="text" name="code">
-			</fieldset>
-			<fieldset>
-				<label>Название банка</label>
-				<input type="text" name="bank">
-			</fieldset>
-			<fieldset>
-				<label>Расчетный счет</label>
-				<input type="text" name="bank">
-			</fieldset>
-			<fieldset>
-				<label>ФИО директора</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>E-mail директора</label>
-				<input type="email" name="email">
-			</fieldset>			
-			<fieldset>
-				<label>Телефон директора</label>
-				<input type="tel" name="tel">
-			</fieldset>
-			<fieldset>
-				<label>Контактное лицо</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>E-mail для связи</label>
-				<input type="email" name="email">
-			</fieldset>
-			<fieldset>
-				<label>Телефон для связи</label>
-				<input type="tel" name="tel">
-			</fieldset>
-			<fieldset>
-				<label>Сайт компании</label>
-				<input type="text" name="name">
-			</fieldset>
-			<fieldset>
-				<label>Прикрепить копию документа (Выписка о Гос. Регистрации)</label>
-				<input type="file" name="file">
-			</fieldset>
-			<fieldset>
-				<label>Скидка %</label>
-				<p>30</p>
-				<input type="text" name="discount">
-			</fieldset>
-			<fieldset>
-				<label>Баланс</label>
-				<p>30000</p>
-				<input type="text" name="balance">
-			</fieldset>
-			<a href="#" class="button">Сохранить</a>
-		</div>		
-	</div>
-
+<!-- Modal window del -->
 	<div id="modal-del" class="modal-del mfp-hide">
 		<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<p class="modal-del">Вы уверены?</p>
+		<p>Вы уверены?</p>
 		<a href="#" class="button">Да</a>
 	</div>
+	<!-- Modal window del end-->
 
+	<!-- ===== SCRIPTS ===== -->
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
+	<!-- ===== SCRIPTS END ===== -->
 </body>
 </html>
