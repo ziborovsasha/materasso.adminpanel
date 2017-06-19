@@ -3,13 +3,11 @@
 /*--     1. Fonts               -- */
 /*--     2. Normalize           -- */
 /*--     3. Main                -- */
-/*--       3.1 Icons            -- */
-/*--       3.2 Buttons          -- */
-/*--       3.3 Forms            -- */
+/*--       3.1 Buttons          -- */
+/*--       3.2 Forms            -- */
 /*--     4. Header              -- */
 /*--     5. Content             -- */
-/*--     6. Footer              -- */
-/*--     7. Media               -- */
+/*--     6. Media               -- */
 /*--                            -- */
 /*-------------------------------- */
 /* 1. FONTS */
@@ -188,15 +186,7 @@ html, body {
   text-align: right;
 }
 
-/* 3.1. Icons
- * ====================== */
-.ic {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* 3.2. Buttons
+/* 3.1. Buttons
  * ====================== */
 .button, a.button {
   position: relative;
@@ -251,7 +241,7 @@ html, body {
   padding: 3px 10px;
 }
 
-/* 3.3. forms
+/* 3.2. forms
  * ====================== */
 input[type='text'],
 input[type='number'],
@@ -370,6 +360,7 @@ label {
 
 /* 5. CONTENT */
 /* ================================================ */
+/* saidebar */
 .accordion {
   float: left;
   width: 230px;
@@ -440,6 +431,8 @@ label {
   color: #FFF;
 }
 
+/* sidebar end */
+/* content */
 .cnt {
   overflow: hidden;
   padding: 20px;
@@ -447,7 +440,7 @@ label {
 
 section {
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -468,42 +461,6 @@ section .title-init {
 section .quantity {
   font-size: 26px;
   font-weight: 600;
-}
-
-.course form {
-  display: inline-block;
-  margin-right: 20px;
-}
-.course form label {
-  display: inline-block !important;
-  vertical-align: middle;
-  margin-right: -4px;
-  font-size: 20px;
-}
-.course form span {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -4px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: underline;
-}
-.course form input {
-  margin-left: 20px;
-  width: 70px;
-}
-
-.requisites fieldset, .requisites label {
-  margin-bottom: 20px;
-}
-.requisites span {
-  display: inline-block;
-  width: 45%;
-}
-.requisites input {
-  width: 45%;
 }
 
 .section-wrap {
@@ -533,6 +490,33 @@ section .quantity {
   font-weight: 600;
 }
 
+.course form {
+  display: inline-block;
+  margin-right: 20px;
+}
+.course form label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+  font-size: 20px;
+}
+.course form span {
+  vertical-align: middle;
+  margin-right: -4px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.course form input {
+  margin-left: 20px;
+  width: 60px;
+}
+
+table {
+  width: 100%;
+}
+
 .table-store {
   margin-bottom: 20px;
   text-shadow: 1px 1px 0px #fff;
@@ -551,15 +535,27 @@ section .quantity {
   background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
   background: -moz-linear-gradient(top, #ededed, #ebebeb);
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 .table-store th {
   font-size: 16px;
   font-weight: 600;
 }
 
+.requisites fieldset, .requisites label {
+  margin-bottom: 20px;
+}
+.requisites span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.requisites input {
+  width: 45%;
+}
+
 .category-product h2, .category-partner h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .category-product .select2, .category-partner .select2 {
   width: 260px !important;
@@ -571,10 +567,7 @@ section .quantity {
   margin-bottom: 15px;
 }
 
-table {
-  width: 100%;
-}
-
+/* Modal window */
 .modal-news-add, .modal-category-add, .modal-product, .modal-del, .modal-partner-add, .modal-partner-edit, .modal-save, .modal-send, .modal-downloads-add {
   position: relative;
   background: #FFF;
@@ -695,17 +688,28 @@ table {
   outline: none;
 }
 
-/* 6. FOOTER */
+/* 6. MEDIA */
 /* ================================================ */
-footer {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  z-index: 1;
-  width: 100%;
-  min-width: 320px;
-}
+@media screen and (max-width: 1024px) {
+  .accordion {
+    width: 110px;
+  }
+  .accordion .link {
+    padding: 25px 15px;
+    font-size: 0;
+  }
+  .accordion i {
+    top: 12px;
+    font-size: 26px;
+  }
 
-/* 7. MEDIA */
-/* ================================================ */
+  .submenu li a {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .table-store th, .table-store td {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
